@@ -1,4 +1,16 @@
 # Using-DeepSeek-offline-with-Python
-A guide to use DeepSeek offline and use it in your Python code (Windows + LM Studio)
+This guide walks you through setting up and running DeepSeek-R1 locally on Windows 10/11 using LM Studio and Python. No expensive cloud APIs required!
 
-(To be updated soon)
+# 1. Install LM Studio
+LM Studio allows you to run LLM models locally on your computer.
+
+🔗 Download LM Studio: 👉 https://lmstudio.ai/
+
+✅ Installation Steps:
+
+1. Download and install LM Studio for Windows. (Currently available version: 0.3.9 as of 31 Jan, 2025)
+2. Open LM Studio and go to the Discover tab.
+3. Search for DeepSeek-R1-Distill-Qwen-7B-GGUF or DeepSeek-R1-Distill-Llama-8B-GGUF and download the model. 
+4. Load up the model from "Select a model to load" tab or press Ctrl+L and then load the downloaded model.
+5. Go to the Developer tab and start the local API server (in LM Studio 0.3.8 it appears as a Status button. Change it from "Stopped" to "Running")
+   ![image](https://github.com/user-attachments/assets/93d5bc65-c8f4-46cd-9576-3aa151e775fd)
