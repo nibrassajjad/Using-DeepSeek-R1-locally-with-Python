@@ -34,12 +34,43 @@ LM Studio allows you to run LLM models locally on your computer.
 
    <em>(We install the OpenAI package to communicate with LM Studio's local API, allowing us to send prompts and receive responses from offline LLM models using Python.)</em>
 
-5. Verify OpenAI package installation by writing this in Command Prompt (cmd):
+4. Verify OpenAI package installation by writing this in Command Prompt (cmd):
 
    pip show openai
 
    If installed, you'll see Name: openai and a version number along with some more details.
    <em>(The version of OpenAI I ran this program on is 0.28.0)</em>
+
+# 3. Run the Python Script
+
+Ensuring the packages from Step 2 are installed while DeepSeek-R1 model is loaded with the local API server in "running" status in LM Studio, proceed to run the deepseekpython.py in your preffered code development environment.
+
+🔗 You can run deepseekpython.py using Visual Studio Code 👉 https://code.visualstudio.com/
+
+If you are using Visual Studio Code, press Ctrl+F5 to run the script. You will get a prompt like this upon execution in output console:
+
+![image](https://github.com/user-attachments/assets/bb7c41d4-8dd8-47a3-a22f-43094c6282cd)
+
+Write anything you want in the prompt and wait a while for the model to answer back. It took me on average around 30 seconds to 1 minute for basic questions (NVIDIA GeForce RTX 2060 with 16 GB RAM)
+
+# Troubleshooting
+🔹 Issue: "openai.ChatCompletion.create is not supported"
+
+✔ Fix: Use the new openai.chat.completions.create() method.
+
+🔹 Issue: "No module named openai"
+
+✔ Fix: Run pip install openai to install the package.
+
+🔹 Issue: "Could not connect to http://localhost:1234/v1"
+
+✔ Fix: Ensure LM Studio API server is running under the Server tab.
+
+# Author notes
+If you liked this project, please leave a star! 🌟
+
+
+
 
    
 
